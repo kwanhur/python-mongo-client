@@ -220,13 +220,3 @@ class MongoDBClient(object):
             if cursor.get('ok') == 1.0:
                 return True
         return False   
-        
-if __name__ == '__main__':
-    query = QueryBuilder()
-    query.mod('key', 111, 0)
-    q = QueryBuilder()
-    q.each_add_to_set('val', [1, 2, 3, 4])
-    print(query.key_val)
-    print(q.key_val)
-    client = MongoDBClient('10.12.147.196', 27017, 'huanghua', 'Test')
-    print(client.select_count(query.key_val))
