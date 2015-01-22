@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 #_*_ coding:utf8 _*_
-'''
+"""
 Created on 2013-4-10
 
 @author: huanghua
-'''
+"""
 
 
 class QueryUpdateOperator(object):
+    """
+    these operator for mongodb
+    """
     '''
     { field: { $all: [ <value> , <value1> ... ] }
     '''
